@@ -111,7 +111,7 @@ console.log("Updated Middle Initial: " + midInitial);
 //	The season has changed, update the hot outside variable	to be opposite of what it was
 //  ↓ YOUR CODE HERE ↓
 
-var isHot = true;
+var isHot = !isHot;
 console.log("Is it hot ouside now? " + isHot);
 
     console.log('Full Name:')
