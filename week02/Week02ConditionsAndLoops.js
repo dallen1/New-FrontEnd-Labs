@@ -98,7 +98,14 @@ Question 3: Username & Password \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+var username;
+var password;
 
+if (username == "Tommy123" && password == "12345" || username == "Timmy456" && password == "6789") {
+   console.log("Admin Login Successful")
+} else {
+   console.log("Admin Access Denied")
+}
 
 /*-------------------------------------------------------*/
 
