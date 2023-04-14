@@ -45,7 +45,16 @@ Question 1: Driving the speed limit.. ? \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+var speedLimit = 65;
+var mySpeed = 55;
 
+if (mySpeed > speedLimit) {
+   console.log("Slow down! Mom is mad!")
+ } else if (mySpeed == speedLimit) {
+   console.log("Everyone is happy!")
+ } else if (mySpeed < speedLimit) {
+   console.log("Speed up! Dad is mad!")
+ }
 
 /*-------------------------------------------------------*/
 
