@@ -73,7 +73,14 @@ Question 2: Is it time to wake up for work? \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+var alarmSet = true;
+var weekDay = true;
 
+if (alarmSet && weekDay) {
+  console.log("Sound Alarm! Time for work!");
+} else {
+  console.log("I can sleep in!");
+}
 
 /*-------------------------------------------------------*/
 
