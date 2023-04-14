@@ -125,6 +125,25 @@ Question 4: Student Class \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+var studentClass;
+var studentGrade = 10;
+
+if (studentGrade >= 0 && studentGrade <=6) {
+   studentClass = "Elementary";
+} else if (studentGrade == 7 || studentGrade == 8) {
+   studentClass= "Middle";
+} else if (studentGrade == 9) {
+   studentClass = "Freshman"
+ } else if (studentGrade == 10) {
+   studentClass = "Sophomore"
+ } else if (studentGrade == 11) {
+   studentClass = "Junior"
+ } else if (studentGrade == 12) {
+   studentClass = "Senior"
+ } else {
+   console.log("Error")
+ }
+
 
 
 /*-------------------------------------------------------*/
@@ -140,7 +159,26 @@ Question 5: Loops! \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+//1
+for (let i=10;i>=-10;i--) {
+   console.log(i);
+}
 
+//2
+i=1;
+do {
+   console.log(i);
+   i++
+} while (i <=50)
+
+//3
+i=1;
+do {
+   if (i % 4 ==0 ) {
+      console.log(i);
+   }
+   i++
+} while (i <=50)
 
 /*-------------------------------------------------------*/
 
