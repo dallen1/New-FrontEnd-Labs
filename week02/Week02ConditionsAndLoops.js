@@ -192,7 +192,9 @@ Question 5: Debugging an infinite loop! \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+for(let i = 0;   i < 10;     i++){
+   console.log(i);
+} 
 
 
 console.log('-----------Finished------------')
