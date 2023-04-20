@@ -41,8 +41,9 @@ let alphabetString = 'abcdefghijklmnopqrstuvwxyz';
  * ↓ YOUR CODE HERE ↓ */
 
 
+let strToArray = alphabetString.split();
 
-
+console.log(strToArray);
 
 
 // Question 2: alphabetArray
@@ -60,7 +61,8 @@ let alphabetArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
  * ↓ YOUR CODE HERE ↓ */
 
 
-
+alphabetReverse = alphabetArray.reverse();
+console.log(alphabetReverse.join(''))
 
 
 
