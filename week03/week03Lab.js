@@ -110,8 +110,16 @@ Question 4: Todo List \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
-
+let myTodoList = [];
+console.log(myTodoList);
+myTodoList.push('Post Office', 'Groceries', 'Gas');
+console.log(myTodoList);
+myTodoList.splice(1,1);
+console.log(myTodoList);
+let yourTodoList = ['Get Tickets', 'Get Kids'];
+console.log(yourTodoList);
+let ourTodoList = myTodoList.concat(yourTodoList);
+console.log(ourTodoList);
 
 
 
