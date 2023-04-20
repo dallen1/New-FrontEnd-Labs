@@ -139,17 +139,23 @@ Question 5: isEven  \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+function isEven(x) {
+       if (x % 2 == 0) {
+              return true;
+       } else {
+              return false;
+       }
+}
 
 
 
 /* ↑ YOUR CODE HERE ↑ */
 
 //! Sample test cases for the above isEven function (uncomment to test)
-//console.log(isEven(2));   //should return true
-//console.log(isEven(3));   //should return false
-//console.log(isEven(4));   //should return true
-//console.log(isEven(5));   //should return false
+console.log(isEven(2));   //should return true
+console.log(isEven(3));   //should return false
+console.log(isEven(4));   //should return true
+console.log(isEven(5));   //should return false
 
 
 
