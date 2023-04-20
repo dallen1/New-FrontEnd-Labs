@@ -215,15 +215,50 @@ Question 7: reverse \n`);
 
 
 
+function reverse(x) {
+
+       function stringFlip(x) {
+              x = x.split('');
+              x = x.reverse();
+              x = x.join('');
+              return x;
+       }
+
+       if (typeof x === "boolean") {
+              x = !x;             
+              
+       } else if (typeof x === "number") {
+              x = x.toString();
+              x = stringFlip(x);
+              x = parseInt(x);
+
+       } else if (typeof x === "string") {
+              x = stringFlip(x);
+
+       } else if (Array.isArray(x)) {
+              x = x.reverse();
+              for (let i = 0; i < x.length; i++) {
+                     if (typeof x[i] === "string" ) {
+                            x[i]=stringFlip(x[i]);
+              } 
+       }
+       } else {
+              x = false;
+       }
+
+       return x;
+ 
+}
+
 
 
 /* ↑ YOUR CODE HERE ↑ */
 
 // Sample test cases for the above reverse function (uncomment to test)
-//console.log(reverse(1234));         //should return 4321
-//console.log(reverse('hello'));      //should return 'olleh'
-//console.log(reverse(true));         //should return false
-//console.log(reverse([1, 2, 3, 4])); //should return [4, 3, 2, 1]
+console.log(reverse(1234));         //should return 4321
+console.log(reverse('hello'));      //should return 'olleh'
+console.log(reverse(true));         //should return false
+console.log(reverse([1, 2, 3, 4])); //should return [4, 3, 2, 1]
 
 
 
