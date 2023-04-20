@@ -282,13 +282,19 @@ Question 8: removeElements \n`);
  * ↓ YOUR CODE HERE ↓ */
 
 
+function removeElements(x) {
+       while (x.length > 0) {
+       x.pop();
+       }
+       return x;
+}
 
 
 
 /* ↑ YOUR CODE HERE ↑ */
 
 // Sample test cases for the above removeElements function (uncomment to test)
-//console.log(removeElements([1, 2, 3, 4, 5])); //should return [] (an empty array)
+console.log(removeElements([1, 2, 3, 4, 5])); //should return [] (an empty array)
 
 
 
