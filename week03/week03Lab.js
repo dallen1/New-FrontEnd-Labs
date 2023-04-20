@@ -314,13 +314,22 @@ Question 9: whichArrayIsLonger  \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+function whichArrayIsLonger(array1,array2) {
+       if (array1.length > array2.length) {
+              return array1;
+       } else if (array1.length < array2.length) {
+              return array2;
+       } else if (array1.length === array2.length) {
+              return false;
+       }
+       
+}
 
 
 
 /* ↑ YOUR CODE HERE ↑ */
 
 // Sample test cases for the above whichArrayIsLonger function (uncomment to test)
-//console.log(whichArrayIsLonger([1, 2, 3, 4, 5], [1, 2, 3, 4]));    //should return [1, 2, 3, 4, 5]
-//console.log(whichArrayIsLonger([1, 2, 3, 4], [1, 2, 3, 4, 5, 6])); ///should return [1, 2, 3, 4, 5, 6]
-//console.log(whichArrayIsLonger([1, 2, 3, 4], [1, 2, 3, 4]));       //should return false (because they are the same length)
+console.log(whichArrayIsLonger([1, 2, 3, 4, 5], [1, 2, 3, 4]));    //should return [1, 2, 3, 4, 5]
+console.log(whichArrayIsLonger([1, 2, 3, 4], [1, 2, 3, 4, 5, 6])); ///should return [1, 2, 3, 4, 5, 6]
+console.log(whichArrayIsLonger([1, 2, 3, 4], [1, 2, 3, 4]));       //should return false (because they are the same length)
