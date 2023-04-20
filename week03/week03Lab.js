@@ -174,16 +174,22 @@ Question 6: addingMachine \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+function addingMachine(x) {
+       let sum = 0;
+       for (let i = 0; i < x.length; i++) {
+              sum += x[i]
+       }
+       return sum;
+}
 
 
 
 /* ↑ YOUR CODE HERE ↑ */
 
 //! Sample test cases for the above isEven function (uncomment to test)
-//console.log(addingMachine([1, 2, 3, 4, 5]));                    //should return 15
-//console.log(addingMachine([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));    //should return 55
-//console.log(addingMachine([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); //should return 120
+console.log(addingMachine([1, 2, 3, 4, 5]));                    //should return 15
+console.log(addingMachine([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));    //should return 55
+console.log(addingMachine([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); //should return 120
 
 
 
