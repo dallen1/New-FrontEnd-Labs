@@ -44,8 +44,13 @@ Question 1: Declaring Let and Const variables`)
  *
  * ↓ YOUR CODE HERE ↓ */
 
+const eat = "Salad";
+const drink = "Tea";
+let myName = "Fred";
+let friendName = "Barnie"
+
 //Question: Name a reason why you would use const instead of let.
-//Answer:
+//Answer: You'd use const if you want to ensure that the value the varaible represents isn't altered later in the execution stack.
 
 /*---------------------------------- Template Literals -------------------------------------*/
 console.log(`-------------------------- 
