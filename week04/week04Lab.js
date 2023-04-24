@@ -100,9 +100,15 @@ Question 3: Arrow Functions`)
  * Step 3: Copy the code below, ↓ paste it underneath our new function, and run the code.
  *         console.log(lunchTime('Pizza','Water'))
  * ↓ YOUR CODE HERE ↓ */
-
+const lunchTime = (foodChoice, drinkChoice) => `My name is ${myName} and when I was out with ${friendName} I got a ${foodChoice} and a ${drinkChoice}.`;
+console.log(lunchTime('Pizza','Water'))
 //Question: What would your function look like if we were using the old way of creating a function?
 //Answer:
+function lunchTime2(foodChoice,drinkChoice){
+return `My name is ${myName} and when I was out with ${friendName} I got a ${foodChoice} and a ${drinkChoice}.`;
+};
+console.log(lunchTime2('Pizza','Water'))
+
 
 /*---------------------------------- Callbacks -------------------------------------*/
 console.log(`-------------------------- 
