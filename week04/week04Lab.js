@@ -45,12 +45,12 @@ Question 1: Declaring Let and Const variables`)
  * ↓ YOUR CODE HERE ↓ */
 
 const eat = "Salad";
-const drink = "Tea";
+let drink = "Tea";
 let myName = "Fred";
 let friendName = "Barnie"
 
 //Question: Name a reason why you would use const instead of let.
-//Answer: You'd use const if you want to ensure that the value the varaible represents isn't altered later in the execution stack.
+//Answer: You'd use const if you want to ensure that the value the varaible represents isn't altered later in the execution.
 
 /*---------------------------------- Template Literals -------------------------------------*/
 console.log(`-------------------------- 
@@ -62,10 +62,12 @@ Question 2: Template Literals`)
  *
  *
  * ↓ YOUR CODE HERE ↓ */
+console.log(`My name is ${myName} and when I was out with ${friendName} I got a ${eat} and a ${drink}.`)
 
 //Question: How would the sentence you wrote look if you used string concatenation instead of template literals?
 //          console.log() your answer to check
 //Answer:
+console.log("My name is "+myName+" and when I was out with "+friendName+" I got a "+eat+" and a "+drink+".")
 console.log(`-------------------------- 
 Question 2a: Oh no`)
 
@@ -75,9 +77,12 @@ Question 2a: Oh no`)
  * Step 2: Make a change to your code in Question 1 to fix the error. Run your code to make sure it's fixed.
  *
  * ↓ YOUR CODE HERE ↓ */
+drink="Soda";
+console.log(drink);
 
-//Question: Read the error message - in your own words - what does it mean?
-//Answer:
+//Question: Read the error message - in your own words - what does it mean? 
+ 
+//Answer: It means that we tried to change the value assgned to a varaible declared as a constant. 
 
 /*---------------------------------- Arrow Functions -------------------------------------*/
 console.log(`-------------------------- 
